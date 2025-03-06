@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    padding: 30px;
+}
+
+body {
+    background-color: rgb(49, 47, 47);
+    color: white;
+}
+
+.nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-container ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+
+}
+
+
+
+.nav-bar-container ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.logo-container {
+    background-color: lightgrey;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.content-container {
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.content-container h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+}
+
+.content-container p {
+    font-size: small;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    animation-name: slideLeft;
+    animation-duration: 1.2s;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-in;
+}
+
+.icons-flex {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.icon-box:hover {
+    box-shadow: 0px 0px 15px #98f023;
+    transition: 0.6s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.icon-box {
+    background-color: darkgrey;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    font-size: 70px;
+    color: rgb(3, 55, 78);
+    transition: all 0.3s;
+}
+
+.icon-box .fa-html5 {
+    color: rgb(83, 60, 16);
+}
+
+
+.icon-box .fa-css3 {
+    color: rgb(10, 8, 87);
+}
+
+
+.icon-box .fa-square-js {
+    color: yellow;
+}
+
+.icon-box .fa-git-alt {
+    color: orange;
+}
+
+.icon-box small {
+    font-size: 15px;
+    color: black;
+    opacity: 0.7;
+}
+
+
+.positioning-container {
+    width: 300px;
+    position: relative;
+    height: 300px;
+    /* border: 2px solid red; */
+    /* z-index: 1; */
+}
+
+.positioning-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+
+.positioning-container img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 25px rgb(9, 162, 9);
+}
+
+.projects-container {
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.projects-container p {
+    position: absolute;
+    /* z-index: 0; */
+    bottom: 10px;
+    left: 20px;
+    font-size: 30px;
+
+}
+
+h4 {
+    /* border: 1px solid blue; */
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.9;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.declaration p {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+
+.hire-me {
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.hire-me:hover {
+    box-shadow: 0px 0px 20px rgb(9, 162, 9);
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.social-icons .fa-facebook {
+    color: blue;
+}
+
+.social-icons .fa-instagram {
+    color: purple;
+}
+
+.social-icons .fa-twitter {
+    color: skyblue;
+}
+
+.social-icons .fa-linkedin {
+    color: ;
+}
+
+
+@keyframes slideLeft {
+
+    0% {
+        transform: translateX(-300px) scale(0);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+
+    }
+}
